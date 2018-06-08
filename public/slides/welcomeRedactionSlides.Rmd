@@ -1,0 +1,130 @@
+---
+title: "Welcome and ***R***edaction"
+date: "useR group meeting: June 1, 2018"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introductions
+
+  - Name
+  - Agency & Team
+  - What kind of work/projects do you do? 
+    - e.g. how do you use R
+  - Experience with R
+    - why did you learn (do you want to learn) R?
+    - what is a fun thing you have used R for?
+  
+## What is DPI's useR group?
+
+Semi-formal, cross agency group of primarily research analyst type folks at 
+*all* levels of programming/R use/familiarity with statistics.
+  
+  - ~50% presentations on R-related (or project related) things that may be 
+     of use/interest to the group and
+     
+  - ~50% informal (possibly wide ranging) discussions ... sometimes it is 
+    just nice to complain at the end of a long week
+    
+Currently meet every 4 weeks
+  
+## Recent topics 
+
+  - DPI ggplot2 theme
+  - How to (productively) ask for help
+  - YRBS Survey results*
+  
+## Things to consider in this brave new world
+
+**Logistics**
+
+  - Communications 
+    - Listerv
+    - G+ community?
+    
+  - Access to materials 
+    - Access to internal website
+    
+  - Meeting Frequency
+    - Cross-agency meeting every 8 weeks?
+    - Rotate cross-agency meeting?
+    
+**Planning and Organization**
+
+  - Topic ideas
+
+## Redaction of Aggregate/Tabular Data
+
+Context: For DPI, this comes up via requests for custom tables.
+
+**Primary Suppression**
+
+  - protecting cells that would consitute a disclosure
+  - typically, there is a minimum threshold e.g. cell size of 5
+  
+**Secondary Suppression**
+
+  - ensuring that primary suppressed cells are protected from indirect 
+    disclosure, i.e. via subtraction
+    
+## Comparison of techniques for treating tabular data 
+
+Table: (Excerpt from Australian Bureau of Statistics)
+
+--------------------------------------------------------------------------------------------
+Strategy           Advantages                       Disadvantages
+------------------ -------------------------------- ----------------------------------------
+Data Reduction     - Relatively easy to implement   - Does not reliably protect individuals 
+                   <br>- Requires minimal education   from differencing between multiple 
+                   of users                           overlapping tables <br>
+                                                    - May reduce data's usefulness <br>
+                                                    - The data custodian chooses what data 
+                                                      to remove without necessarily knowing 
+                                                      what is most important to the data 
+                                                      users <br>
+                                                    - Requires secondary suppression, some
+                                                      suppressed ceslls may still be 
+                                                      estimated
+                                                    
+Data Modification  - Generally does not affect the  - Does not provide additivity within 
+                     data's overall utility <br>      tables unless secondary modifications
+                   - Generally protects against       are applied <br>
+                     differencing, zero cells,      - Requires some education of users <br>
+                     and 100% cells <br>            - Entails significant setup costs <br>
+                   - May be automated, requiring    - May reduce the data's usefulness 
+                     minimal human input              (particularly when analyzing small
+                                                      areas/populations)
+--------------------------------------------------------------------------------------------
+
+## Writing a custom function for secondary redaction
+
+Turns out, it is hard to write your own functions for secondary suppression
+even for simple tables ... let along difficult tables like those that people 
+are asking for.
+
+Enter the `sdcTable` package (*note: use the development version from github,
+the version on CRAN has a bug in it*)
+
+```{r, eval = FALSE, echo = TRUE}
+devtools::install_github("bernhard-da/sdcTable")
+```
+
+If you are interested, I suggest you follow along with the vignette.
+
+It can take a while to find the optimal solution. One run on a decently big
+table took 4 hours on my desktop computer.
+
+## Redaction Resources
+
+ - DPI <https://dpi.wi.gov/wise/data-privacy/safeguarding>
+ - `sdcTable` Vignette <https://cran.r-project.org/web/packages/sdcTable/vignettes/sdcTable.pdf>
+ - US Dept of Education <https://nces.ed.gov/pubs2011/2011603.pdf>
+ - ESS Handbook for Statistical Disclosure Control <https://wiki.helsinki.fi/download/attachments/51451064/SDC_Handbook.pdf> 
+ - Austrailan Bureau of Statistics (Aug 2017) <http://www.abs.gov.au/AUSSTATS/abs@.nsf/ProductsbyReleaseDate/13B872F17A7DD0F8CA258184001896D6?OpenDocument>
+ 
+Any other tools/advice
+
+

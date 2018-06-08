@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>External-data-sharing on Natrium Theme</title>
+    <link>/categories/external-data-sharing/</link>
+    <description>Recent content in External-data-sharing on Natrium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/external-data-sharing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Welcome and Redaction</title>
+      <link>/welcome-and-redaction/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/welcome-and-redaction/</guid>
+      <description>At today&amp;rsquo;s meeting, we welcomed some new members from DHS, DCF and DWD. It was fun to make these connections and see how other agencies are using R.
+In the second half of the program, Carl led a discussion about redacting tabular/aggregated data for external data requests. The focus was on the sdcTable package. The R Markdown file that created the slides are available online here.</description>
+    </item>
+    
+  </channel>
+</rss>
