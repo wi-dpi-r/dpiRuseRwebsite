@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Natrium Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>2018</title>
       <link>/categories/2018/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/2018/</guid>
       <description></description>
@@ -26,6 +26,33 @@
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/external-data-sharing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open source</title>
+      <link>/categories/open-source/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Public sector</title>
+      <link>/categories/public-sector/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/public-sector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sustainable</title>
+      <link>/categories/sustainable/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/sustainable/</guid>
       <description></description>
     </item>
     
