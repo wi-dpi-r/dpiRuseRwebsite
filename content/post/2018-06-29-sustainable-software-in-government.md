@@ -1,6 +1,6 @@
 ---
-title: "Sustainable Software in Government"
-date: "2018-06-29"
+title: "Sustainable Software in Government (29 June 2018)"
+date: "2018-06-26"
 draft: false
 categories: [sustainable, public sector, open source, 2018]
 tags: [open source]
