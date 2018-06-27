@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Natrium Theme"
+title = "WI DPI useR Group"
 theme = "hugo-natrium-theme"
 preserveTaxonomyNames = true
 rssLimit = 10
