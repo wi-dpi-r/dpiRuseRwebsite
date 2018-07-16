@@ -31,6 +31,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "Categories"
     url = "/categories"
     weight = -130
+    
+[[menu.main]]
+    name = "Upcoming Meetings"
+    url = "/calendar"
+    weight = -100
 
 [params]
     description = ""
