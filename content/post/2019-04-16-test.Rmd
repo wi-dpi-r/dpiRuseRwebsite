@@ -1,0 +1,10 @@
+---
+title: test
+author: ''
+date: '2019-04-16'
+slug: test
+categories: []
+tags: []
+---
+
+<iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiZjQ5OWI5OTYtMjEyMS00YmRiLWExYmQtMDA2MzdlOWUxZWM5IiwidCI6IjE2NTRkMTQwLTMyNjAtNDkwMy1iNWI3LTE4NDUwMDUxY2UxNiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
