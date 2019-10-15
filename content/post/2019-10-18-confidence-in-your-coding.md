@@ -1,7 +1,7 @@
 ---
 title: Confidence in Your Coding
 author: Carl Frederick
-date: '2019-10-18'
+date: '2019-10-15'
 slug: confidence-in-your-coding
 categories:
   - '2019'
@@ -12,8 +12,10 @@ tags:
   - programming
 ---
 
-Come join the discussion about the various methods available to be confident
-that your R code is doing what you think it's doing. We will plan to cover:
+Come join the discussion this Friday (10/18/2019) about the various methods 
+available to be confident that your R code is doing what you think it's doing. 
+
+We will plan to cover:
 
 - Defensive programming,
 - Quality assurance, and
